@@ -226,3 +226,36 @@ Universe full IDX (334 saham likuid) | data 5 tahun. Level SL/TP TETAP (SL -2%, 
 - Live: tanpa-label → 5 trade, WR 80.0%, avg R +0.500, total R +1.00
 - LIVE TOTAL: 5 trade, avg R +0.200, disiplin plan 60%
 - Akurasi sinyal: BELI 0/0 (0%), JUAL 0/0 (0%)
+
+# Strategy Changelog — 2026-09-18
+
+Universe full IDX (343 saham likuid) | data 5 tahun. Level SL/TP TETAP (SL -2%, R:R 1:2 — aturan user).
+
+## breakout
+- Champion: {} → exp -0.730R PF 0.38 (trades 1725, p=1.000)
+- Best sweep: {"lookback": 15, "vol_mult": 2.5, "adx_min": 25} → exp -0.695R PF 0.41 (delta +0.035R, trades 1174, p=1.000, konsistensi 0.0)
+- Verdict: ❌ belum layak
+
+## momentum_rs
+- Champion: {} → exp -0.854R PF 0.28 (trades 2362, p=1.000)
+- Best sweep: {"rs_percentile": 95} → exp -0.781R PF 0.34 (delta +0.073R, trades 1030, p=1.000, konsistensi 0.0)
+- Verdict: ❌ belum layak
+
+## v3score
+- Champion: {} → exp -0.908R PF 0.24 (trades 13708, p=1.000)
+- Best sweep: {"threshold": 6} → exp -0.887R PF 0.25 (delta +0.021R, trades 19655, p=1.000, konsistensi 0.0)
+- Verdict: ❌ belum layak
+
+## trio
+- Champion: {} → exp -0.712R PF 0.34 (trades 1048, p=1.000)
+- Best sweep: {"rsi2_max": 10, "mfi_max": 30} → exp -0.712R PF 0.34 (delta +0.000R, trades 1048, p=1.000, konsistensi 0.0)
+- Verdict: ❌ belum layak
+
+## pullback
+- Skip: tanpa knob yang bisa di-sweep (semua hardcoded)
+
+## mean_reversion
+- Skip: knob atr_mult/tp_r mati sejak level FIX (SL -2%, R:R 1:2)
+- Live: tanpa-label → 5 trade, WR 80.0%, avg R +0.500, total R +1.00
+- LIVE TOTAL: 5 trade, avg R +0.200, disiplin plan 60%
+- Akurasi sinyal: BELI 0/0 (0%), JUAL 0/0 (0%)
